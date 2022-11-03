@@ -15,7 +15,6 @@ Below are some quick examples of pipelines you can use with the json included in
 ## Pipeline: colourize point cloud
 
  `pdal pipeline pdal-colourize.json`
----
 
 ## Pipeline: simple dtm
 
