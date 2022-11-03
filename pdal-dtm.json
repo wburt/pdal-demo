@@ -1,0 +1,17 @@
+{
+    "pipeline":[
+         "bc_082f054_2_1_1_xyes_8_utm11_180827_rgb.copc.laz",
+        {
+            "type":"filters.range",
+            "limits":"Classification[2:2]"
+        },
+        {
+          "type": "writers.gdal",
+          "filename":"dtm.tif",
+          "output_type":"idw",
+          "gdaldriver":"GTiff",
+          "resolution": 1
+        }
+        
+    ]
+}

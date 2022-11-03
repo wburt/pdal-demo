@@ -1,0 +1,23 @@
+{
+    "pipeline": [
+        {
+            "type": "readers.las",
+            "filename":"bc_082f054_2_1_1_xyes_8_utm11_180827.laz",
+            "override_srs":"EPSG:2955",
+            "nosrs": "true"
+        }
+        ,
+        {
+            "type": "filters.colorization",
+            "raster": "bc_082f054_2_1_1_xc150mm_utm11_2017.tif"
+        },
+        {
+            "type": "filters.range",
+            "limits": "Red[1:]"
+        },
+        {
+            "type": "writers.copc",
+            "filename":"bc_082f054_2_1_1_xyes_8_utm11_180827_rgb.copc.laz"
+        }
+    ]
+}
