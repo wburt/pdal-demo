@@ -1,4 +1,4 @@
-# LiDAR Working Group - Quick PDAL demo
+# LiDAR Working Group - Quick PDAL Demo
 https://pdal.io/en/stable/index.html
 ![random image](./resource/img.jpg)
 
